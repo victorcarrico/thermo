@@ -4,9 +4,9 @@ from rest_framework import serializers
 class UserSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = User
-		fields = ('user_id', 'name')
+		fields = ('user_id', 'name', 'on')
 
-class StatusSerializer(serializers.HyperlinkedModelSerializer):
-	class Meta:
-		model = Status
-		fields = ('temp', 'date' , 'user')
+class StatusSerializer(serializers.Serializer):
+	temp = serializers.CharField(max_length=10)
+	date = serializers.DateTimeField()
+	user = serializers.CharField(max_length=100)

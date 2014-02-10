@@ -1,26 +1,30 @@
 from models import User, Status
-from rest_framework import viewsets
 from serializers import UserSerializer, StatusSerializer
-
 from django.http import Http404, HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.renderers import JSONRenderer
 
+class JSONResponse(HttpResponse):
+    def __init__(self, data, **kwargs):
+        content = JSONRenderer().render(data)
+        kwargs['content_type'] = 'application/json'
+        super(JSONResponse, self).__init__(content, **kwargs)
 
-class UserViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+class UserList(APIView):
+	
+	def get(self, request, format=None):
+		users = User.objects.all()
+		serializer = UserSerializer(users, many=True)
+		return JSONResponse(serializer.data)
 
 class StatusList(APIView):
 
 	def get(self, request, format=None):
 		statuss = Status.objects.all()
 		serializer = StatusSerializer(statuss, many=True)
-		return Response(serializer.data)
+		return JSONResponse(serializer.data)
 
 	def post(self, request, format=None):
 

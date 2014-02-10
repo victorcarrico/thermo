@@ -3,6 +3,7 @@ from django.db import models
 class User(models.Model):
 	user_id = models.CharField(max_length=10)
 	name = models.CharField(max_length=30)
+	on = models.BooleanField()
 
 	def __unicode__(self):
 		return "%s - %s" % (self.user_id,self.name)
