@@ -1,0 +1,45 @@
+<Alloy>
+	<TabGroup id="details" class="container">
+		<Tab id="tab1" title="Detalhes">
+			<Window id="win1">
+				
+				<Label id="labelTemp" />
+				
+				<Label id="labelID"/>
+				<Label id="labelName" text="Nome" />
+				<TextField id="name" />
+				<View id="pickerView">
+					<Picker id="picker">
+						<PickerRow id="celsius" title="Celsius"/>
+						<PickerRow id="faren" title="Farenheit"/>
+					</Picker>
+				</View>
+				
+				<Switch id="switchATT" onChange="attTemp" />
+				
+				<Button id="voltar" onClick="voltar"/>
+				<Button id="submit" />
+				
+			</Window>
+		</Tab>
+		
+		<Tab id="tab2" title="Sobre">
+			<Window id="win2">
+				
+				<Label>
+					Centro de Informática - UFPE
+					Projeto de alunos da disciplina de Engenharia de Software e Sistemas 2013.2
+					Equipe: - Gustavo Brayner, Sylvia Marcela, Tiago Cavalcanti e Victor Carriço
+				</Label>
+				
+			</Window>	
+		</Tab>
+		<Tab id="tab3" title="Sair">
+			<Window id="win3">
+				<Button title="Logout" /> 
+			</Window>
+			
+		</Tab>
+		
+	</TabGroup>
+</Alloy>

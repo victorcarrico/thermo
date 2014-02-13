@@ -1,0 +1,37 @@
+"#index": {
+	backgroundColor:"#3498db"
+}
+
+"#logo": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	text: "ThermoStatus",
+	top: 50,
+	
+} 
+
+"#id": {
+	width: 200,
+	height: 50,
+	color: "white",
+	backgroundColor:"white",
+	hintText: "usuario",
+	top: 100,
+} 
+
+"#senha": {
+	width: 200,
+	height: 50,
+	backgroundColor:"white",
+	hintText: "senha",
+	top: 170,
+} 
+
+"#entrar" : {
+	width: 100,
+	height: 50,
+	top: 240,
+	color:"white",
+	title:"Entrar"
+}

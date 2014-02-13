@@ -1,0 +1,10 @@
+
+".container" : {
+  
+}
+
+"#profile" : {
+	backgroundColor:"white",
+	height:"640",
+	width:"320"
+}

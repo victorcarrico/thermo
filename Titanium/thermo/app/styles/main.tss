@@ -1,0 +1,16 @@
+"#tab1" : {
+	title:"Usuários"
+}
+
+"#tab2" : {
+	title:"Novo"
+}
+
+"#tab3" : {
+	title:"Sobre"
+}
+
+"#main" : {
+	headerTitle : "ThermoStatus",
+	font : {fontSize: 26}
+}

@@ -1,0 +1,28 @@
+<Alloy>
+	<TabGroup id="main">
+		<Tab id="tab1">
+			<Window id="win1" title="Usuários" onFocus="attUsers">
+				<TableView id="tableView"/>
+			</Window>
+		</Tab>
+		
+		<Tab id="tab2" title="Cadastrar">
+			<Window id="win2" title="Cadastro">
+				
+				<Label>
+					Centro de Informática - UFPE
+					Projeto de alunos da disciplina de Engenharia de Software e Sistemas 2013.2
+					Equipe: - Gustavo Brayner, Sylvia Marcela, Tiago Cavalcanti e Victor Carriço
+				</Label>
+				
+			</Window>	
+		</Tab>
+		<Tab id="tab3" title="Sobre">
+			<Window id="win3" title="Sobre">
+				<Button title="Logout" /> 
+			</Window>
+			
+		</Tab>
+		
+	</TabGroup>
+</Alloy>

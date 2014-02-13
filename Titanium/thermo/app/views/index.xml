@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="index">
+		<Label id="logo" />
+		
+		<TextField id="id"/>
+		<TextField id="senha"/>
+		
+		<Button id="entrar" onClick="goToMain"/>
+		
+	</Window>
+</Alloy>

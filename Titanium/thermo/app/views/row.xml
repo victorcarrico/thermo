@@ -1,0 +1,5 @@
+<Alloy>
+	<TableViewRow id="row" onClick="openDetails"> 
+		<Switch id="switchButton" />
+	</TableViewRow>
+</Alloy>
